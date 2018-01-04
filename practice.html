@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>css practise</title>
     <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -14,22 +19,25 @@
         body {
             background-color: yellow;
             margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
 
         }
 
         .child {
             background-color: blueviolet;
-            margin: 100px;
+            margin: 100px 100px;
             height: 50%;
             width: 30%;
             border: dashed red 10px;
         }
 
         .box {
-            height: 400px;
-            width: 40%;
+            height: 30%;
+            width: 20%;
             background-color: green;
-            margin: 10px;
             padding: 20px;
             border: solid blue 20px;
         }
